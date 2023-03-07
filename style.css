@@ -1,0 +1,87 @@
+nav {
+  background-color: #be5d5d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* optional: align the items vertically */
+  padding: 10px 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* make the list items display horizontally */
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #0c0606;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #666666;
+}
+
+/* Style for the footer */
+
+@keyframes footer-animation {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.employee {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.employee img {
+  width: 250px;
+  height:  350px;
+  object-fit: cover;
+}
+
+.employee h2 {
+  margin-top: 10px;
+}
+
+.employee p {
+  margin-top: 5px;
+}
+
+
+footer {
+  animation: footer-animation 1s ease-in-out forwards;
+  opacity: 0;
+}
+
+footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+footer hr {
+  border: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+
