@@ -7,7 +7,8 @@
    
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Employee App</title>
-
+   
+    
 </head>
 <body>
     <nav >
@@ -19,13 +20,51 @@
             <li><a href="">Log in</a></li>
         </ul>
     </nav>
-    <h1>Employee App</h1>
+    <br>
     
-    <main></main>
-    <script src="app.js"></script>
+    <main>
+    
+   
 
+    
+    <div >
+      <form id="form">
+      <label for="full-name">Full Name:</label>
+      <input type="text" id="full-name" name="full_name"><br><br>
+      
+      <label for="department">Department:</label>
+      <select id="department" name="department">
+        
+        <option value="" selected disabled style="font-weight: normal; color: gray;">Select the Department</option>
+        <option value="Administration">Administration</option>
+        <option value="Marketing">Marketing</option>
+        <option value="Development">Development</option>
+        <option value="Finance">Finance</option>
+      </select><br><br>
+      
+      <label for="level">Level:</label>
+      <select id="level" name="level">
+        <option value="" selected disabled style="font-weight: normal; color: gray;">Select the Level</option>
+
+        <option value="Junior">Junior</option>
+        <option value="Mid-Senior">Mid-Senior</option>
+        <option value="Senior">Senior</option>
+      </select><br><br>
+      
+      <label for="image-url">Image URL:</label>
+      <input type="text" id="image-url" name="image_url"><br><br>
+      
+      <input type="submit" value="submit" class="submit-btn">
+      
+    </div>
+  <br>
+  <br>
+    <div id="cards-container"></div>
+
+      
+    </main>
     <footer>
-       
+      <script src="event.js"></script>
         <hr style="border: 2px solid black;">
         <address>
           Main Street<br>
