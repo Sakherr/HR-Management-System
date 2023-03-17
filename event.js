@@ -29,7 +29,7 @@ form.addEventListener("submit", function(event) {
     image_url: document.getElementById("image-url").value,
     id: generateEmployeeId()
   };
-  "use strict"
+  
   // add new employee to employees array
   employees.push(employeeData);
 
@@ -65,5 +65,3 @@ function generateEmployeeId() {
   return employeeId;
 }
 
-
-export { employees };
