@@ -5,28 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
-    <link rel="stylesheet" type="text/css" href="style.css">
+   <link rel="stylesheet" type="text/css" href="style.css">
     <title>Employee App</title>
-
+   
+    
 </head>
 <body>
     <nav >
         <ul >
             <li><a href="">Home</a></li>
-            <li><a href="./accounting.html">Accounting page</a></li>
+            <li><a href="./accouting.html">Accounting page</a></li>
             <li><a href="">New</a></li>
             <li><a href="">Saved</a></li>
             <li><a href="">Log in</a></li>
         </ul>
     </nav>
-    <h1>Employee App</h1>
+    <br>
     
-    <main></main>
-    <script src="app.js"></script>
+    <main>
+    
+   
 
+    
+    <div >
+      <form id="form">
+      <label for="full-name">Full Name:</label>
+      <input type="text" id="full-name" name="full_name"><br><br>
+      
+      <label for="department">Department:</label>
+      <select id="department" name="department">
+        
+        <option value="" selected disabled style="font-weight: normal; color: gray;">Select the Department</option>
+        <option value="Administration">Administration</option>
+        <option value="Marketing">Marketing</option>
+        <option value="Development">Development</option>
+        <option value="Finance">Finance</option>
+      </select><br><br>
+      
+      <label for="level">Level:</label>
+      <select id="level" name="level">
+        <option value="" selected disabled style="font-weight: normal; color: gray;">Select the Level</option>
+
+        <option value="Junior">Junior</option>
+        <option value="Mid-Senior">Mid-Senior</option>
+        <option value="Senior">Senior</option>
+      </select><br><br>
+      
+      <label for="image-url">Image URL:</label>
+      <input type="text" id="image-url" name="image_url"><br><br>
+      
+      <input type="submit" value="submit" class="submit-btn">
+      
+    </div>
+  <br>
+  <br>
+    <div id="cards-container"></div>
+
+        <!-- department data will be added dynamically here -->
+      </tbody>
+    </table>
+
+      
+    </main>
     <footer>
-       
-        <hr style="border: 2px solid black;">
+     
+
+
+        
+      
+      <hr style="border: 2px solid black;">
         <address>
           Main Street<br>
            Irbid, Jordan +962<br>
@@ -41,6 +88,8 @@
         <p> &copy; All right reserved</p>
         <p>By Sakher shteyat</p>
     </footer>
-
 </body>
 </html>
+<script   src="event.js"></script>
+<script src="accouting.js"></script>
+
